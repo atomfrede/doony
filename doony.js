@@ -404,7 +404,9 @@ jQuery(function($) {
     // Remove icons from the left hand menu and strip nbsp's
     $(".task").each(function() {
         var href = $("a", $(this)).attr("href");
-        console.log(href);
+        var source = $("a img", $(this)).attr("src");
+        console.log(source);
+        
         if(href.indexOf("newJob") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-tasks'> </i>");
         }
