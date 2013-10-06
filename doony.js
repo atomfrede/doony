@@ -545,6 +545,15 @@ jQuery(function($) {
             if(source.indexOf("folder.png") != -1){
                 $(this).replaceWith("<i class='icon-dashboard icon-3x'> </i>");
             }
+            else if(source.indexOf("notepad.png") != -1){
+                $(this).replaceWith("<i class='icon-code icon-3x'> </i>");
+            }
+            else if(source.indexOf("clipboard.png") != -1){
+                 $(this).replaceWith("<i class='icon-stackexchange icon-3x'> </i>");
+            }
+            else if(source.indexOf("findbugs-48x48.png") != -1){
+                $(this).replaceWith("<i class='icon-bug icon-3x'> </i>");
+            }
         }
         //console.log($(this).attr("src"));
     });
