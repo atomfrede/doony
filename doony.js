@@ -538,11 +538,11 @@ jQuery(function($) {
         var source = $(this).attr("src");
         var width = $(this).width();
         var height = $(this).height();
-        console.log(source);
-        console.log(width);
-        console.log(height);
+        //console.log(source);
+        //console.log(width);
+        //console.log(height);
         if(source != undefined && width == 48 && height == 48){
-            if(source.indexOf("folder.png")){
+            if(source.indexOf("folder.png") != -1){
                 $(this).replaceWith("<i class='icon-dashboard icon-3x");
             }
         }
