@@ -515,6 +515,9 @@ jQuery(function($) {
         else if(href.indexOf("fingerprints") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-credit-card'> </i>");
         }
+        else if(href.indexOf("cobertura") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-cogs'> </i>");
+        }
         
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
@@ -524,7 +527,6 @@ jQuery(function($) {
 
     //replace all images with fontawesome
     $("img").each(function() {
-        console.log($(this));
         var source = $(this).attr("src");
         var width = $(this).width();
         var height = $(this).height();
@@ -562,6 +564,9 @@ jQuery(function($) {
             }
             else if(source.indexOf("dialog-warning.png") != -1){
                 $(this).replaceWith("<i class='icon-warning-sign icon-3x'> </i>");
+            }
+            else if(source.indexOf("graph.gif") != -1){
+                $(this).replaceWith("<i class='icon-cogs icon-3x'> </i>");
             }
         }
         
