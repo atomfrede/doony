@@ -541,6 +541,11 @@ jQuery(function($) {
         console.log(source);
         console.log(width);
         console.log(height);
+        if(source != undefined && width == 48 && height == 48){
+            if(source.indexOf("folder.png")){
+                $(this).replaceWith("<i class='icon-dashboard icon-3x");
+            }
+        }
         //console.log($(this).attr("src"));
     });
     
