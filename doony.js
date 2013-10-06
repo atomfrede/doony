@@ -535,6 +535,12 @@ jQuery(function($) {
     //replace all images with fontawesome
     $("img").each(function() {
         console.log($(this));
+        var source = $(this).attr("src");
+        var width = $(this).width();
+        var height = $(this).height();
+        console.log(source);
+        console.log(width);
+        console.log(height);
         //console.log($(this).attr("src"));
     });
     
