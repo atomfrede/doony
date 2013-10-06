@@ -536,7 +536,7 @@ jQuery(function($) {
                 $(this).replaceWith("<i style='text-decoration: none;'class='icon-dashboard icon-3x'> </i>");
             }
             else if(source.indexOf("notepad.png") != -1){
-                $(this).replaceWith("<i style='text-decoration: none; class='icon-code icon-3x'> </i>");
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-code icon-3x'> </i>");
             }
             else if(source.indexOf("clipboard.png") != -1){
                  $(this).replaceWith("<i class='icon-stackexchange icon-3x'> </i>");
@@ -566,7 +566,7 @@ jQuery(function($) {
                 $(this).replaceWith("<i class='icon-warning-sign icon-3x'> </i>");
             }
             else if(source.indexOf("graph.gif") != -1){
-                $(this).replaceWith("<i class='icon-cogs icon-3x'> </i>");
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-cogs icon-3x'> </i>");
             }
         }
         
