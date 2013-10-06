@@ -572,6 +572,9 @@ jQuery(function($) {
             else if(source.indexOf("game-48x48.png") != -1){
                  $(this).replaceWith("<i class='icon-gamepad icon-3x'> </i>");
             }
+            else if(source.indexOf("dialog-warning.png") != -1){
+                $(this).replaceWith("<i class='icon-warning-sign icon-3x'> </i>");
+            }
         }
         //console.log($(this).attr("src"));
     });
