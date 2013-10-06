@@ -459,6 +459,23 @@ jQuery(function($) {
         else if(href.indexOf("claims") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-meh'> </i>");
         }
+        else if(href.indexOf("console") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-terminal'> </i>");
+        }
+        else if(href.indexOf("confirmDelete") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-ban-circle'> </i>");
+        }
+        else if(href.indexOf("git") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-github'> </i>");
+        }
+        else if(href.indexOf("tagBuild") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-tag'> </i>");
+        }
+        else if(href.indexOf("testReport") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-stackexchange'> </i>");
+        }
+        
+        
         else if(href.indexOf("/jenkins/job") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
         }
