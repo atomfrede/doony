@@ -512,6 +512,9 @@ jQuery(function($) {
         else if(href.indexOf("pmd") != -1){
             $("a img", $(this)).replaceWith("<i class='icon-ambulance'> </i>");
         }
+        else if(href.indexOf("fingerprints") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-credit-card'> </i>");
+        }
         
         
         //else if(href.indexOf("/jenkins/job") != -1){
