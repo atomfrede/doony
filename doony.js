@@ -416,7 +416,7 @@ jQuery(function($) {
             else if(source.indexOf("next.png") != -1){
                 $("a img", $(this)).replaceWith("<i class='icon-arrow-right'> </i>");
             }
-            else if(source.indexOf("search.png") != -1){
+            else if(source.indexOf("search.png") != -1 && href.indexOf("projectRelationship") == -1){
                 $("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
             }
         
