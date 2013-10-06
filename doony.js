@@ -407,6 +407,10 @@ jQuery(function($) {
         var source = $("a img", $(this)).attr("src");
         console.log(source);
         
+        if(source.indexOf("up.png") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
+        }
+        
         if(href.indexOf("newJob") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-tasks'> </i>");
         }
