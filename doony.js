@@ -405,19 +405,21 @@ jQuery(function($) {
     $(".task").each(function() {
         var href = $("a", $(this)).attr("href");
         var source = $("a img", $(this)).attr("src");
-        console.log(source);
+        if(source != undefined) {
         
-        if(source.indexOf("up.png") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
-        }
-        else if(source.indexOf("previous.png") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-arrow-left'> </i>");
-        }
-        else if(source.indexOf("next.png") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-arrow-right'> </i>");
-        }
-        else if(source.indexOf("search.png") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
+            if(source.indexOf("up.png") != -1){
+                $("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
+            }
+            else if(source.indexOf("previous.png") != -1){
+                $("a img", $(this)).replaceWith("<i class='icon-arrow-left'> </i>");
+            }
+            else if(source.indexOf("next.png") != -1){
+                $("a img", $(this)).replaceWith("<i class='icon-arrow-right'> </i>");
+            }
+            else if(source.indexOf("search.png") != -1){
+                $("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
+            }
+        
         }
         
         if(href.indexOf("newJob") != -1){
