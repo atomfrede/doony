@@ -479,9 +479,9 @@ jQuery(function($) {
         //else if(href.indexOf("/jenkins/job") != -1){
              //$("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
         //}
-        else if(href.indexOf("/jenkins/") != -1){
-             $("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
-        }
+        //else if(href.indexOf("/jenkins/") != -1){
+             //$("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
+        //}
       
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
