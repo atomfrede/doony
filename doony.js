@@ -576,6 +576,12 @@ jQuery(function($) {
                 $(this).replaceWith("<i class='icon-warning-sign icon-3x'> </i>");
             }
         }
+        
+         if(source != undefined && width == 24 && height == 24){
+             if(source.indexOf("clock.png") != -1){
+                 $(this).replaceWith("<i class='icon-play icon-large'> </i>");
+             }
+         }
         //console.log($(this).attr("src"));
     });
     
