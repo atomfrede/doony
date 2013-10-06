@@ -477,7 +477,7 @@ jQuery(function($) {
              $("a img", $(this)).replaceWith("<i class='icon-meh'> </i>");
         }
         else if(href.indexOf("console") != -1){
-             $("a img", $(this)).replaceWith("<span class='icon-stack'><i class='icon-sign-blank icon-stack-base'></i><i class='icon-terminal icon-light'></i></span>");
+             $("a img", $(this)).replaceWith("<i class='icon-terminal'> </i>");
         }
         else if(href.indexOf("confirmDelete") != -1){
             $("a img", $(this)).replaceWith("<i class='icon-ban-circle'> </i>");
