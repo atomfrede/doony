@@ -534,7 +534,8 @@ jQuery(function($) {
 
     //replace all images with fontawesome
     $("img").each(function() {
-        console.log($(this).attr("src"));
+        console.log("Hello World");
+        //console.log($(this).attr("src"));
     });
     
     // build a callout
