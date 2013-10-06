@@ -554,6 +554,24 @@ jQuery(function($) {
             else if(source.indexOf("findbugs-48x48.png") != -1){
                 $(this).replaceWith("<i class='icon-bug icon-3x'> </i>");
             }
+            else if(source.indexOf("orange-square.png") != -1){
+                 $(this).replaceWith("<i class='icon-play icon-3x'> </i>");
+            }
+            else if(source.indexOf("checkstyle-48x48.png") != -1){
+                 $(this).replaceWith("<i class='icon-check icon-3x'> </i>");
+            }
+            else if(source.indexOf("pmd-48x48.png") != -1){
+                 $(this).replaceWith("<i class='icon-ambulance icon-3x'> </i>");
+            }
+            else if(source.indexOf("dry-48x48.png") != -1){
+                $(this).replaceWith("<i class='icon-copy icon-3x'> </i>");
+            }
+            else if(source.indexOf("analysis-48x48.png") != -1){
+                $(this).replaceWith("<i class='icon-warning-sign icon-3x'> </i>");
+            }
+            else if(source.indexOf("game-48x48.png") != -1){
+                 $(this).replaceWith("<i class='icon-gamepad icon-3x'> </i>");
+            }
         }
         //console.log($(this).attr("src"));
     });
