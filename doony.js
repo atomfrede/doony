@@ -441,6 +441,15 @@ jQuery(function($) {
         else if(href.indexOf("badge") != -1){
             $("a img", $(this)).replaceWith("<i class='icon-shield'> </i>");
         }
+        else if(href.indexOf("ws") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-dashboard'> </i>");
+        }
+        else if(href.indexOf("changes") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-code> </i>");
+        }
+        else if(href.indexOf("GitHubPollLog") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-code-fork> </i>");
+        }
       
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
