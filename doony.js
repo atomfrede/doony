@@ -408,6 +408,18 @@ jQuery(function($) {
         if(href.indexOf("asynchPeople") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-group'> </i>");
         }
+        if(href.indexOf("builds") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-book'> </i>");
+        }
+        if(href.indexOf("projectRelationship") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-exchange'> </i>");
+        }
+        if(href.indexOf("fingerprintCheck") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-credit-card'> </i>");
+        }
+        if(href.indexOf("cigame") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-gramepad'> </i>");
+        }
       
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
