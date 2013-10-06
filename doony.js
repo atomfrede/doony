@@ -516,16 +516,6 @@ jQuery(function($) {
              $("a img", $(this)).replaceWith("<i class='icon-credit-card'> </i>");
         }
         
-        
-        //else if(href.indexOf("/jenkins/job") != -1){
-             //$("a img", $(this)).replaceWith("<i class='icon-bar-chart'> </i>");
-        //}
-        //else if(href.indexOf("/jenkins/") != -1){
-             //$("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
-        //}
-      
-        
-        
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
             return replaced;
@@ -538,9 +528,7 @@ jQuery(function($) {
         var source = $(this).attr("src");
         var width = $(this).width();
         var height = $(this).height();
-        //console.log(source);
-        //console.log(width);
-        //console.log(height);
+
         if(source != undefined && width == 48 && height == 48){
             if(source.indexOf("folder.png") != -1){
                 $(this).replaceWith("<i style='text-decoration: none;'class='icon-dashboard icon-3x'> </i>");
