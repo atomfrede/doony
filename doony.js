@@ -403,7 +403,7 @@ jQuery(function($) {
 
     // Remove icons from the left hand menu and strip nbsp's
     $(".task").each(function() {
-        //$("a img", $(this)).remove();
+        $("a img", $(this)).replaceWidth("<i class='icon-plus'> </i>");
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
             return replaced;
