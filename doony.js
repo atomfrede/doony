@@ -405,20 +405,29 @@ jQuery(function($) {
     $(".task").each(function() {
         var href = $("a", $(this)).attr("href");
         console.log(href);
-        if(href.indexOf("asynchPeople") != -1){
+        if(href.indexOf("newJob") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-tasks'> </i>");
+        }
+        else if(href.indexOf("asynchPeople") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-group'> </i>");
         }
-        if(href.indexOf("builds") != -1){
+        else if(href.indexOf("builds") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-book'> </i>");
         }
-        if(href.indexOf("projectRelationship") != -1){
+        else if(href.indexOf("projectRelationship") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-exchange'> </i>");
         }
-        if(href.indexOf("fingerprintCheck") != -1){
+        else if(href.indexOf("fingerprintCheck") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-credit-card'> </i>");
         }
-        if(href.indexOf("cigame") != -1){
-             $("a img", $(this)).replaceWith("<i class='icon-gramepad'> </i>");
+        else if(href.indexOf("cigame") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-gamepad'> </i>");
+        }
+        else if(href.indexOf("manage") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-wrench'> </i>");
+        }
+        else if(href.indexOf("disk-usage") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-suitcase'> </i>");
         }
       
         $(this).html(function(idx, oldHtml) {
