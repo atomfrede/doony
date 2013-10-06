@@ -445,10 +445,13 @@ jQuery(function($) {
             $("a img", $(this)).replaceWith("<i class='icon-dashboard'> </i>");
         }
         else if(href.indexOf("changes") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-code> </i>");
+            $("a img", $(this)).replaceWith("<i class='icon-code'> </i>");
         }
         else if(href.indexOf("GitHubPollLog") != -1){
-             $("a img", $(this)).replaceWith("<i class='icon-code-fork> </i>");
+             $("a img", $(this)).replaceWith("<i class='icon-code-fork'> </i>");
+        }
+        else if(href.indexOf("#") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-ban-circle'> </i>");
         }
       
         $(this).html(function(idx, oldHtml) {
