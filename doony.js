@@ -491,6 +491,27 @@ jQuery(function($) {
         else if(href.indexOf("testReport") != -1){
             $("a img", $(this)).replaceWith("<i class='icon-stackexchange'> </i>");
         }
+        else if(href.indexOf("modules") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-briefcase'> </i>");
+        }
+        else if(href.indexOf("violations") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-warning-sign'> </i>");
+        }
+        else if(href.indexOf("analysis") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-warning-sign'> </i>");
+        }
+        else if(href.indexOf("findbugs") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-bug'> </i>");
+        }
+        else if(href.indexOf("checkstyle") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-check'> </i>");
+        }
+        else if(href.indexOf("dry") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-copy'> </i>");
+        }
+        else if(href.indexOf("pmd") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-ambulance'> </i>");
+        }
         
         
         //else if(href.indexOf("/jenkins/job") != -1){
