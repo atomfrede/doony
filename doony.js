@@ -429,6 +429,9 @@ jQuery(function($) {
         else if(href.indexOf("disk-usage") != -1){
              $("a img", $(this)).replaceWith("<i class='icon-suitcase'> </i>");
         }
+        else if(href.indexOf("github") != -1){
+            $("a img", $(this)).replaceWith("<i class='icon-github-sign'> </i>");
+        }
       
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
