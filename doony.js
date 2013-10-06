@@ -405,7 +405,10 @@ jQuery(function($) {
     $(".task").each(function() {
         var href = $("a", $(this)).attr("href");
         console.log(href);
-        $("a img", $(this)).replaceWith("<i class='icon-plus'> </i>");
+        if(href.indexOf("asynchPeople") != -1){
+             $("a img", $(this)).replaceWith("<i class='icon-group'> </i>");
+        }
+      
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
             return replaced;
