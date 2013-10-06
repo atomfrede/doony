@@ -543,7 +543,7 @@ jQuery(function($) {
         //console.log(height);
         if(source != undefined && width == 48 && height == 48){
             if(source.indexOf("folder.png") != -1){
-                $(this).replaceWith("<i class='icon-dashboard icon-3x");
+                $(this).replaceWith("<i class='icon-dashboard icon-3x'> </i>");
             }
         }
         //console.log($(this).attr("src"));
