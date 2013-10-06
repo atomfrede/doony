@@ -534,7 +534,7 @@ jQuery(function($) {
 
     //replace all images with fontawesome
     $("img").each(function() {
-        console.log("Hello World");
+        console.log($(this));
         //console.log($(this).attr("src"));
     });
     
