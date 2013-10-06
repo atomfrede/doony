@@ -596,13 +596,13 @@ textarea
 }
 
 .task a:nth-child(n+1) {
-    padding: 10px 30px 10px 0;
+    padding: 0px 5px 0px 0;
     display: inline-block;
 }
 
 .task a:first-child,
 .task img {
-    display: none;
+    /*display: none;*/
 }
 
 /* make the link target bigger */
