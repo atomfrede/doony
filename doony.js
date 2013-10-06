@@ -483,10 +483,7 @@ jQuery(function($) {
              //$("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
         //}
       
-        var src = $("a img", $(this)).attr("src");
-        if(src.indexOf("up") != -1){
-            $("a img", $(this)).replaceWith("<i class='icon-arrow-up'> </i>");
-        }
+        
         
         $(this).html(function(idx, oldHtml) {
             var replaced = oldHtml.replace(/&nbsp;/g, "", "g");
