@@ -532,6 +532,11 @@ jQuery(function($) {
         });
     });
 
+    //replace all images with fontawesome
+    $("img").each(function() {
+        console.log($(this).attr("src"));
+    }
+    
     // build a callout
     var getCallout = function(message, href) {
         return "<div class='doony-callout doony-callout-info'><a " +
