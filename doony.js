@@ -477,7 +477,7 @@ jQuery(function($) {
              $("a img", $(this)).replaceWith("<i class='icon-meh'> </i>");
         }
         else if(href.indexOf("console") != -1){
-             $("a img", $(this)).replaceWith("<i class='icon-terminal on icon-sign-blank'> </i>");
+             $("a img", $(this)).replaceWith("<span class='icon-stack'><i class='icon-sign-blank icon-stack-base'></i><i class='icon-terminal icon-light'></i></span>");
         }
         else if(href.indexOf("confirmDelete") != -1){
             $("a img", $(this)).replaceWith("<i class='icon-ban-circle'> </i>");
@@ -567,6 +567,9 @@ jQuery(function($) {
             }
             else if(source.indexOf("graph.gif") != -1){
                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-cogs icon-3x'> </i>");
+            }
+            else if(source.indexOf("graph.png") != -1){
+                  $(this).replaceWith("<i style='text-decoration: none;' class='icon-cogs icon-3x'> </i>");
             }
         }
         
