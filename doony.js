@@ -775,5 +775,5 @@ jQuery(function($) {
 
     $("#l10n-footer").after("<span class='doony-theme'>Browsing Jenkins with " +
         "the <a target='_blank' href='https://github.com/kevinburke/doony'>" +
-        "Doony theme</a></span>");
+        "Doony theme</a> modified by <a target='_blank' href='https://github.com/atomfrede/doony'>atomfrede</a></span>");
 });
