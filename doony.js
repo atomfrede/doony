@@ -623,6 +623,15 @@ jQuery(function($) {
                  $(this).replaceWith("<i style='text-decoration: none;' class='icon-play icon-large'> </i>");
              }
          }
+         
+         if(source != undefined && width == 16 && height == 16){
+             if(source.indexOf("atom.gif") != -1){
+                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-rss'> </i>");
+             }
+             else if(source.indexOf("notepad.png") != -1){
+                  $(this).replaceWith("<i style='text-decoration: none;' class='icon-edit'> </i>");
+             }
+         }
         //console.log($(this).attr("src"));
     });
     
