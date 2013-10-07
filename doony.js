@@ -590,7 +590,7 @@ jQuery(function($) {
                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-bullseye icon-3x'> </i>");
             }
             else if(source.indexOf("terminal.png") != -1){
-                $(this).replaceWidth("<span class='icon-stack'>"+
+                $(this).replaceWith("<span class='icon-stack'>"+
                                     "<i class='icon-sign-blank icon-stack-base'></i>"+
                                     "<i class='icon-terminal icon-light'></i>"+
                                     "</span>")
