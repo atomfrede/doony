@@ -608,7 +608,7 @@ jQuery(function($) {
                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-file-text icon-3x'> </i>");
             }
             else if(source.indexOf("diskusage48.png") != -1){
-                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-file-suitcase icon-3x'> </i>");
+                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-suitcase icon-3x'> </i>");
             }
             else if(source.indexOf("user.png") != -1){
                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-group icon-3x'> </i>");
