@@ -571,6 +571,51 @@ jQuery(function($) {
             else if(source.indexOf("graph.png") != -1){
                   $(this).replaceWith("<i style='text-decoration: none;' class='icon-cogs icon-3x'> </i>");
             }
+            else if(source.indexOf("setting.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-wrench icon-3x'> </i>");
+            }
+            else if(source.indexOf("secure.png") != -1){
+                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-lock icon-3x'> </i>");
+            }
+            else if(source.indexOf("refresh.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-refresh icon-3x'> </i>");
+            }
+            else if(source.indexOf("plugin.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-puzzle-piece icon-3x'> </i>");
+            }
+            else if(source.indexOf("computer.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-desktop icon-3x'> </i>");
+            }
+            else if(source.indexOf("monitor.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-bullseye icon-3x'> </i>");
+            }
+            else if(source.indexOf("terminal.png") != -1){
+                $(this).replaceWidth("<span class='icon-stack'>"+
+                                    "<i class='icon-sign-blank icon-stack-base'></i>"+
+                                    "<i class='icon-terminal icon-light'></i>"+
+                                    "</span>")
+            }
+            else if(source.indexOf("network.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-link icon-3x'> </i>");
+            }
+            else if(source.indexOf("credentials.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-key icon-3x'> </i>");
+            }
+            else if(source.indexOf("help.png") != -1){
+                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-info-sign icon-3x'> </i>");
+            }
+            else if(source.indexOf("document.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-file-text icon-3x'> </i>");
+            }
+            else if(source.indexOf("diskusage48.png") != -1){
+                 $(this).replaceWith("<i style='text-decoration: none;' class='icon-file-suitcase icon-3x'> </i>");
+            }
+            else if(source.indexOf("user.png") != -1){
+                $(this).replaceWith("<i style='text-decoration: none;' class='icon-group icon-3x'> </i>");
+            }
+            else if(source.indexOf("log-out.png") != -1){
+               $(this).replaceWith("<i style='text-decoration: none;' class='icon-power-off icon-3x'> </i>");
+            } 
         }
         
          if(source != undefined && width == 24 && height == 24){
